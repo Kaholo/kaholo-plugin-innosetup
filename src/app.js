@@ -1,8 +1,7 @@
 const child_process = require("child_process")
 
 function runSetup(action){
-    let remDir = action.params.installDir
-    let command = `"${action.params.runSetup}" /VERYSILENT /DIR=${remDir}` 
+    let command = `"${action.params.exeFile}" /VERYSILENT /DIR=${action.params.installDir}` 
 	return new Promise((resolve,reject) => {
 		child_process.exec(command, (error, stdout, stderr) => {
 			if (error) {
