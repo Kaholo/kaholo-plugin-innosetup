@@ -20,6 +20,11 @@
                     "name": "installDir",
                     "viewName": "Install Dir",
                     "type": "string"
+                },
+                {
+                    "name": "silentMode",
+                    "viewName": "Silent Mode",
+                    "type": "boolean"
                 }
             ]
         }
