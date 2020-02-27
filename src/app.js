@@ -10,7 +10,7 @@ function runSetup(action){
 	if (action.params.installDir) 
 		flags.push(`/DIR=${action.params.installDir}`)
 	
-    let command = `"${action.params.exeFile}" /VERYSILENT ${flags.join(' ')}` 
+    let command = `"${action.params.exeFile}" ${flags.join(' ')}` 
 	
 		child_process.exec(command, (error, stdout, stderr) => {
 			if (error) {
