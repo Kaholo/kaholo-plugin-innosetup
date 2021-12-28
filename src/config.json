@@ -5,7 +5,8 @@
     "execProgram": "node",
     "exposeRoute": false,
     "imgUrl": "logo.png",
-    "version": "1.0.0",
+    "category": "CONFIGURATION MGMT",
+    "version": "1.0.1",
     "methods": [
         {
             "name": "runSetup",
